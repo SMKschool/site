@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សុំទោស - ការកសាងទំព័រ</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+        .contruction{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .contruction img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="webimg/Moeyslogo.png" alt="My Langdy Logo"></a>
+            <div​ class="contitle">
+                <p class="titlelogo">អនុវិទ្យាល័យ សាមគ្គី</p>
+                <p class="subtitlelogo" style="font-size: 12px;">លេខកូដសាលា៖​ ០២១១០៥០៣៧០២</p>
+            </div>
+        <input type="checkbox" id="nav_check" hidden>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="nav-link">
+                <img src="webimg/homeicon.png" alt="Home" class="nav-icon">
+                <span>ទំព័រដើម</span>
+              </a>
+            </li>
+            <li>
+              <a href="news.html" class="nav-link">
+                <img src="webimg/newsicon.png" alt="About" class="nav-icon">
+                <span>ព្រឹត្តិការណ៍ និងព័ត៌មាន</span>
+              </a>
+            </li>
+            <li>
+              <a href="wait.html" class="nav-link">
+                <img src="webimg/educationicon.png" alt="Courses" class="nav-icon">
+                <span>ការអប់រំ</span>
+              </a>
+            </li>
+            <li>
+              <a href="MoEYS.html" class="nav-link">
+                <img src="webimg/newsMoeys.png" alt="Contact" class="nav-icon">
+                <span>ឯកសារ និងលិខិត</span>
+              </a>
+            </li>
+            <li>
+              <a href="galllery.html" class="nav-link">
+                <img src="webimg/galleryicon.png" alt="Contact" class="nav-icon">
+                <span>រូបថត</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+    <main>
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="contruction">
+                <img src="webimg/contructionicon.png" alt="LangdyApp Builder">
+                <h1>កំពុងស្ថិតក្នុងការសាងសង់</h1>
+                <p>សូមអភ័យទោស ទំព័រនេះកំពុងស្ថិតក្នុងការសាងសង់។ សូមត្រឡប់មកវិញម្ដងទៀតក្នុងពេលឆាប់ៗ...</p>
+                <p>Our apologies, this page is currently under construction - please check back soon.</p>
+                <br>
+                <p>ទំនាក់ទំនងអ្នកអភិវឌ្ឍន៍ ទូរសព្ទលេខ 087 ​41​8 8​98</p>
+              </div>
+            </div>
+           
+          </div>
+      </main>
+      
+      <div id="footer-div"></div>
+      <!-- Footer -->
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-div').innerHTML = data;
+          })
+          .catch(error => console.error(error));
+      </script>
+<script src="script.js"></script>
+</body>
+</html>
