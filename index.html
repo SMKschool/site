@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <header>
+  <!-- header -nav -->
+  <!-- <header>
     <div class="logo">
       <a href="index.html"><img src="webimg/Moeyslogo.png" alt="My Langdy Logo"></a>
       <div​ class="contitle">
@@ -63,8 +64,19 @@
       <div></div>
       <div></div>
     </label>
-  </header>
-
+  </header> -->
+  <!-- Header -->
+  <div id="header-nav"></div>
+  <!-- Footer -->
+  <script>
+    fetch('header-nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-nav').innerHTML = data;
+      })
+      .catch(error => console.error(error));
+  </script>
+  
   <main>
     <section class="hero">
       <h2 class="animate__animated animate__fadeInDown">អនុវិទ្យាល័យសាមគ្គី

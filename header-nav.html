@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        @font-face {
+  font-family: 'font-title';
+  src: url(fonts/Khmer\ OS\ Muol\ Light\ Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'font-paragraph';
+  src: url(fonts/Khmer\ OS\ Battambang\ Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'font-paragraph';
+  background-color: #fafafa;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+        .logo img{
+            width: 40px;
+        }
+        .titlelogo{
+            font-family: 'font-title';
+            font-size: 22px;
+            margin-left: 15px;
+        }
+        .subtitlelogo{
+            font-family: 'font-paragraph';
+            font-size: 12px;
+            text-align: center;
+        }
+        .contitle{
+            width: 100%;
+            text-align: center;
+        }
+        header{
+            position: sticky;
+            top:0;
+            z-index: 9999;
+        }
+
+header {
+  background: #f8f9fa;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  color: #222222;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+header a{
+  text-decoration: none;
+  color: #222222;
+}
+header .logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  font-family: 'font-title';
+  display: inline-block;
+  color: #222222;
+  padding: 5px 0;
+  margin: 0 10px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: #f15b2d;
+}
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: #f15b2d;
+}
+@media only screen and (max-width: 900px) {
+  header {
+      padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hamburger {
+      display: block;
+  }
+  header nav {
+      position: absolute;
+      width: 100%;
+      left: -100%;
+      top: 70px;
+      width: 100%;
+      background: #f1f1f1;
+      padding: 30px;
+      transition: 0.3s;
+  }
+  header #nav_check:checked ~ nav {
+      left: 0;
+  }
+  header nav ul {
+      display: block;
+  }
+  header nav ul li a {
+      margin: 5px 0;
+  }
+}
+
+/* icon menu */
+nav {
+  /* background-color: #333; */
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #222222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* CSS for larger screens (laptop) */
+@media (min-width: 768px) {
+  .nav-icon {
+    display: none;
+  }
+}
+
+/* CSS for smaller screens (mobile) */
+@media (max-width: 767px) {
+  .nav-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+  }
+}
+/* Main Content Styles */
+
+.about-content{
+  display: flex;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content{
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image img{
+    display: flex;
+    margin-left: 5%;
+    
+  }
+  .contitle{
+    width: 100%;
+    text-align: center;
+  }
+  .contitle p{
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html"><img src="webimg/Moeyslogo.png" alt="My Langdy Logo"></a>
+          <div​ class="contitle">
+            <p class="titlelogo">អនុវិទ្យាល័យ សាមគ្គី</p>
+            <p class="subtitlelogo" style="font-size: 12px;">លេខកូដសាលា៖​ ០២១១០៥០៣៧០២</p>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="nav-link">
+                <img src="webimg/homeicon.png" alt="Home" class="nav-icon">
+                <span>ទំព័រដើម</span>
+              </a>
+            </li>
+            <li>
+              <a href="news.html" class="nav-link">
+                <img src="webimg/newsicon.png" alt="About" class="nav-icon">
+                <span>ព្រឹត្តិការណ៍ និងព័ត៌មាន</span>
+              </a>
+            </li>
+            <li>
+              <a href="wait.html" class="nav-link">
+                <img src="webimg/educationicon.png" alt="Courses" class="nav-icon">
+                <span>ការអប់រំ</span>
+              </a>
+            </li>
+            <li>
+              <a href="MoEYS.html" class="nav-link">
+                <img src="webimg/newsMoeys.png" alt="Contact" class="nav-icon">
+                <span>ឯកសារ និងលិខិត</span>
+              </a>
+            </li>
+            <li>
+              <a href="galllery.html" class="nav-link">
+                <img src="webimg/galleryicon.png" alt="Contact" class="nav-icon">
+                <span>រូបថត</span>
+              </a>
+            </li>
+            <li>
+                <a href="game-ICT/index.html" class="nav-link">
+                  <img src="webimg/gameiq.png" alt="Contact" class="nav-icon">
+                  <span>កំសាន្តប្រាជ្ញា</span>
+                </a>
+              </li>
+          </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </header>
+</body>
+</html>
