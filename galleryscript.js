@@ -1,9 +1,29 @@
 const imageData = [
-    {
-      src: "images-post/p05.jpg",
-      caption: "2024",
-      year: "2024"
-    },
+  {
+    src: "images-post/p05.jpg",
+    caption: "2024",
+    year: "2024"
+  },
+  {
+    src: "images-post/7.jpg",
+    caption: "2024",
+    year: "2024"
+  },
+  {
+    src: "images-post/doe2.jpg",
+    caption: "2024",
+    year: "2024"
+  },
+  {
+    src: "images-post/doe3.jpg",
+    caption: "2024",
+    year: "2024"
+  },
+  {
+    src: "images-post/poe3.jpg",
+    caption: "2024",
+    year: "2024"
+  },
     {
       src: "images-post/p6.jpg",
       caption: "2024",
