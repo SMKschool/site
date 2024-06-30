@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'font-title';
+            src: url(fonts/Khmer\ OS\ Muol\ Light\ Regular.ttf);
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'font-paragraph';
+            src: url(fonts/Khmer\ OS\ Battambang\ Regular.ttf);
+        }
+
+        body {
+            font-family: 'font-paragraph', Arial, sans-serif;
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll on the body */
+        }
+
+        .cardsstaff {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+            box-sizing: border-box;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+        }
+
+        .cardsstaff::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+
+        .card-staff {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 120px;
+            text-align: center;
+            flex: 0 0 auto;
+            /* Prevent flex items from shrinking */
+        }
+
+        .staffimg img {
+            width: 100%;
+            max-height: 120px;
+            height: auto;
+            display: block;
+        }
+
+        .staffinfo {
+            padding: 5px;
+        }
+
+        .name {
+            font-family: 'font-title';
+            font-size: 12px;
+            margin: 5px 0 2px;
+        }
+
+        .occu {
+            font-size: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cardsstaff">
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ឌឹម សារិន.JPG" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ ឌឹម សារិន</p>
+                <p class="occu">លេខាធិការ</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ទន់ ចាន់សុជាតិ.JPG" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ ទន់ ចាន់សុជាតិ</p>
+                <p class="occu">ហេរញ្ញិក</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ផាត់ កែវ.JPG" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ ផាត់ កែវ</p>
+                <p class="occu">បណ្ណារក្ស</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/អ៊ូច ម៉ែត.JPG" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ អ៊ូច ម៉ែត</p>
+                <p class="occu">រូបវិទ្យា-គីមីវិទ្យា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/សុខ សារឿន.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ សុខ សារឿន</p>
+                <p class="occu">ភាសាខ្មែរ-សីលធម៌</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ប៊ាន ភារ៉ា.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ ប៊ាន ភារ៉ា</p>
+                <p class="occu">ភាសាខ្មែរ-សីលធម៌</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/រ៉េត ចំរើន.JPG" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ រ៉េត ចំរើន</p>
+                <p class="occu">ភាសាខ្មែរ-គេហៈ</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ងួន សុវណ្ណៈ.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ ងួន សុវណ្ណៈ</p>
+                <p class="occu">អប់រំកាយ និងកីឡា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ឌុល បុប្ផា.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ ឌុល បុប្ផា</p>
+                <p class="occu">រូបវិទ្យា-គីមីវិទ្យា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ទេព ធីតា.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">អ្នកគ្រូ ទេព ធីតា</p>
+                <p class="occu">ជីវវិទ្យា-ផែនដីវិទ្យា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/កែន សារ៉ាយ.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ កែន សារ៉ាយ</p>
+                <p class="occu">គណិតវិទ្យា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/ប្រឹមម៉េងហ័រ.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ ប្រឹម ម៉េងហ័រ</p>
+                <p class="occu">អប់រំកាយ និងកីឡា</p>
+            </div>
+        </div>
+
+        <div class="card-staff">
+            <div class="staffimg">
+                <img src="kru-img/មី ឡងឌី.jpg" alt="">
+            </div>
+            <div class="staffinfo">
+                <p class="name">លោកគ្រូ មី ឡងឌី</p>
+                <p class="occu">បច្ចេកវិទ្យាព័ត៌មាន-អង់គ្លេស</p>
+            </div>
+        </div>
+
+
+        <!-- Add more card-staff divs as needed -->
+    </div>
+</body>
+
+</html>
