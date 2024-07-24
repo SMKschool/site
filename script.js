@@ -14,7 +14,7 @@ const newsData = [
     title: "ប្ដូរProfile Facebookដើម្បីអបអរពិធីបើកកាដ្ឋានព្រែកជីកហ្វូណនតេជោ",
     content: "លោកនាយក លោកនាយករង លោកគ្រូ អ្នកគ្រូនៃសាលាអនុវិទ្យាល័យសាមគ្គីបានប្ដូរProfile Facebookដើម្បីត្រៀមខ្លួនអបអរពិធីបើកការដ្ឋានព្រែកជីកហ្វូណនតេជោ ដែលគម្រោងព្រែកជីកហ្វូណនតេជោចាប់ផ្ដើមនៅថ្ងៃទី០៥ ខែសីហា ឆ្នាំ២០២៤ខាងមុខនេះ។",
     author: "My Langdy",
-    date: "១៧-កក្កដា-២០២៤",
+    date: "២៤-កក្កដា-២០២៤",
     images: ["FunonTecho/0.jpg","FunonTecho/1.jpg","FunonTecho/2.jpg","FunonTecho/3.jpg","FunonTecho/4.jpg","FunonTecho/5.jpg","FunonTecho/6.jpg","FunonTecho/7.jpg","FunonTecho/8.jpg","FunonTecho/9.jpg","FunonTecho/10.jpg","FunonTecho/11.jpg","FunonTecho/12.jpg","FunonTecho/13.jpg","FunonTecho/14.jpg","FunonTecho/15.jpg",]
   },
   {
